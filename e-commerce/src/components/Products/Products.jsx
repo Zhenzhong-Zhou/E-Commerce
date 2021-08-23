@@ -1,8 +1,6 @@
 import {Grid} from "@material-ui/core";
 import Product from "./Product/Product";
 import useStyles from "./styles";
-import AJ from "../../assets/AJ.png";
-import MBP from "../../assets/MBP16.jpeg";
 
 const Products = ({products, onAddToCart}) => {
 	const  classes = useStyles();
