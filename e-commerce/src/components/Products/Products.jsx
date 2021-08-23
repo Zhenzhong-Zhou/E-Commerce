@@ -4,13 +4,7 @@ import useStyles from "./styles";
 import AJ from "../../assets/AJ.png";
 import MBP from "../../assets/MBP16.jpeg";
 
-const products = [
-	{ id: 1, name: "Shoes", description: "AJ shoes.", price: "$245", image: AJ},
-	{ id: 2, name: "MacBook Pro", description: "Apple MacBook Pro.", price: "$4000", image: MBP},
-] ;
-
-
-const Products = () => {
+const Products = ({products}) => {
 	const  classes = useStyles();
 	return (
 		<main className={classes.content}>
