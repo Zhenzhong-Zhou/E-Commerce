@@ -1,9 +1,11 @@
 import {Grid} from "@material-ui/core";
 import Product from "./Product/Product";
+import AJ from "../../images/AJ.png";
+import MBP from "../../images/MBP16.jpeg";
 
 const products = [
-	{ id: 1, name: "Shoes", description: "Running shoes.", price: "$200"},
-	{ id: 2, name: "Macbook Pro", description: "Apple Macbook Pro.", price: "$4000"},
+	{ id: 1, name: "Shoes", description: "AJ shoes.", price: "$245", image: AJ},
+	{ id: 2, name: "MacBook Pro", description: "Apple MacBook Pro.", price: "$4000", image: MBP},
 ] ;
 
 
