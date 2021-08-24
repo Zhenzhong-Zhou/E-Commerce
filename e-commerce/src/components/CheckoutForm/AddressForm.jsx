@@ -51,16 +51,16 @@ const AddressForm = ({checkoutToken}) => {
 						<Grid item xs={12} sm={6}>
 							<InputLabel>Shipping Country</InputLabel>
 							<Select value={shippingCountry} fullWidth onChange={(e) => setShippingCountry(e.target.value)}>
-								{countries.map((country) => (
-									<MenuItem key={country.id} value={country.id}>{country.label}</MenuItem>
+								{countries.map(({id, label}) => (
+									<MenuItem key={id} value={id}>{label}</MenuItem>
 								))}
 							</Select>
 						</Grid>
 						<Grid item xs={12} sm={6}>
 							<InputLabel>Shipping Subdivision</InputLabel>
 							<Select value={shippingSubdivision} fullWidth onChange={(e) => setShippingSubdivision(e.target.value)}>
-								{Object.entries(shippingSubdivisions).map(([code, name]) => ({ id: code, label: name })).map((item) => (
-									<MenuItem key={item.id} value={item.id}>{item.label}</MenuItem>
+								{subdivisions.map(({id, label}) => (
+									<MenuItem key={id} value={id}>{label}</MenuItem>
 								))}
 							</Select>
 						</Grid>
