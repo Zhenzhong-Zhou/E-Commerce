@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {Paper, Stepper, Step, StepLabel, Typography,CircularProgress, Divider, Button} from "@material-ui/core";
+import {Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button} from "@material-ui/core";
 
 import {commerce} from "../../../lib/commerce";
 import useStyles from "./styles";
@@ -39,7 +39,7 @@ const Checkout = ({cart}) => {
 	);
 	const Form = () => activeStep === 0
 		? <AddressForm checkoutToken={checkoutToken} next={next}/>
-		: <PaymentForm shippingData={shippingData}/>;
+		: <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken}/>;
 	return (
 		<>
 			<div className={classes.toolbar}/>
